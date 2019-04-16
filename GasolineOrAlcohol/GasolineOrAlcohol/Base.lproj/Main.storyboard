@@ -44,11 +44,14 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4c-dO-yjL">
-                                <rect key="frame" x="143" y="366" width="89" height="38"/>
+                                <rect key="frame" x="143" y="353" width="89" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.82450716053773909" green="0.66385401257402676" blue="0.029000037977895011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Calcular"/>
+                                <connections>
+                                    <action selector="caltulate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="POK-BC-3G3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Digite os preços primeiro!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwk-4H-yai">
                                 <rect key="frame" x="16" y="426" width="343" height="52"/>
@@ -70,6 +73,11 @@
                         <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="alcoholTxt" destination="wDI-Ak-WHC" id="pBG-gE-sKr"/>
+                        <outlet property="gasolineTxt" destination="bjh-Bn-Kcr" id="3ca-oa-std"/>
+                        <outlet property="resultLabel" destination="pwk-4H-yai" id="Mf8-ew-rww"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
